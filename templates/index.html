@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Uploader</title>
+</head>
+<body>
+    <h1>Upload CSV File</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv" required><br><br>
+        <label for="new_column_name1">New Column Name 1:</label>
+        <input type="text" name="new_column_name1" id="new_column_name1"><br><br>
+        <label for="new_column_value1">New Column Value 1:</label>
+        <input type="text" name="new_column_value1" id="new_column_value1"><br><br>
+        <label for="new_column_name2">New Column Name 2:</label>
+        <input type="text" name="new_column_name2" id="new_column_name2"><br><br>
+        <label for="new_column_value2">New Column Value 2:</label>
+        <input type="text" name="new_column_value2" id="new_column_value2"><br><br>
+        <label for="new_column_name3">New Column Name 3:</label>
+        <input type="text" name="new_column_name3" id="new_column_name3"><br><br>
+        <label for="new_column_value3">New Column Value 3:</label>
+        <input type="text" name="new_column_value3" id="new_column_value3"><br><br>
+        <label for="default_value">Default Value for Empty Cells (default is "0"):</label>
+        <input type="text" name="default_value" id="default_value"><br><br>
+        <input type="submit" value="Upload and Process">
+    </form>
+</body>
+</html>
